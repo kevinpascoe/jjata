@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/framelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    tools:context=".FullscreenActivity" >
+
+        
+        <uk.co.kpaxindustries.games.jjata.DrawView
+            android:id="@+id/drawview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />     
+
+
+</FrameLayout>
