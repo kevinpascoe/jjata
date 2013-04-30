@@ -1,19 +1,24 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/framelayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
+    android:orientation="horizontal"
     android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
     tools:context=".FullscreenActivity" >
 
-        
-        <uk.co.kpaxindustries.games.jjata.DrawView
-            android:id="@+id/drawview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            />     
+    <uk.co.kpaxindustries.games.jjata.DrawView
+        android:id="@+id/drawview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1.00"
+        android:scaleType="fitXY" />
 
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Next" />
 
-</FrameLayout>
+</LinearLayout>
